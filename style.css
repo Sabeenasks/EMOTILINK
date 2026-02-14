@@ -1,0 +1,177 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+/* NAVBAR */
+.navbar {
+    background: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: 600;
+    color: #6C63FF;
+}
+
+.logout-btn {
+    background: #e63946;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* LOGIN CONTAINER */
+.login-container {
+    display: flex;
+    height: 100vh;
+}
+
+/* LEFT SIDE */
+.login-left {
+    flex: 1;
+    color: white;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-left h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.tagline {
+    font-size: 18px;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.features div {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+/* RIGHT SIDE */
+.login-right {
+    flex: 1;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* LOGIN CARD */
+.login-card {
+    width: 380px;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+    text-align: center;
+    animation: fadeIn 0.8s ease;
+}
+
+.login-card input {
+    width: 100%;
+    padding: 12px;
+    margin: 20px 0;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.login-card button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    background: #6C63FF;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-card button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* DASHBOARD */
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 30px;
+    background: #f8f9fc;
+    min-height: 100vh;
+}
+
+.summary-card {
+    background: white;
+    padding: 15px;
+    border-radius: 16px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 20px;
+}
+
+.panel {
+    background: white;
+    padding: 20px;
+    border-radius: 16px;
+}
+
+/* MOOD BUTTONS */
+.mood-btn {
+    width: 100%;
+    margin: 6px 0;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.happy { background: #2e7d32; }
+.low { background: #f9a825; }
+.overwhelmed { background: #ef6c00; }
+.support { background: #e63946; }
+
+.feed-item {
+    background: #f4f6ff;
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.inbox-item {
+    background: #fff3cd;
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.care-score {
+    margin-top: 15px;
+    color: #6C63FF;
+}
+
+.hidden {
+    display: none;
+}
+
+/* FADE IN ANIMATION */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>EmotiLink</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar hidden" id="navbar">
+    <div class="logo">🌟 EmotiLink</div>
+    <div class="nav-right">
+        <span id="navUser"></span>
+        <button class="logout-btn" onclick="logout()">Logout</button>
+    </div>
+</div>
+
+<!-- PROFESSIONAL LOGIN PAGE -->
+<div id="loginScreen" class="login-container">
+
+    <!-- LEFT SIDE BRANDING -->
+    <div class="login-left">
+        <h1>EmotiLink</h1>
+        <p class="tagline">
+            A private emotional network built for real human connection.
+        </p>
+
+        <div class="features">
+            <div>✔ Share mood in one tap</div>
+            <div>✔ Stay emotionally aware</div>
+            <div>✔ Support your friends instantly</div>
+        </div>
+    </div>
+
+    <!-- RIGHT SIDE LOGIN CARD -->
+    <div class="login-right">
+        <div class="login-card">
+            <h2>Sign In</h2>
+            <p>Enter your name to continue</p>
+
+            <input type="text" id="username" placeholder="Your name">
+
+            <button onclick="login()">Enter Circle</button>
+        </div>
+    </div>
+
+</div>
+
+<!-- DASHBOARD -->
+<div id="dashboard" class="hidden container">
+
+    <div class="summary-card" id="summary"></div>
+
+    <div class="dashboard-grid">
+
+        <div class="panel">
+            <h3>Update Mood</h3>
+            <button class="mood-btn happy" onclick="setMood('Happy')">😊 Happy</button>
+            <button class="mood-btn low" onclick="setMood('Low')">😔 Low</button>
+            <button class="mood-btn overwhelmed" onclick="setMood('Overwhelmed')">😤 Overwhelmed</button>
+            <button class="mood-btn support" onclick="setMood('Need Support')">❤️ Need Support</button>
+            <div class="care-score" id="careScore"></div>
+        </div>
+
+        <div class="panel">
+            <h3>Group Emotional Feed</h3>
+            <div id="feed"></div>
+        </div>
+
+        <div class="panel">
+            <h3>My Inbox</h3>
+            <div id="inbox"></div>
+        </div>
+
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
